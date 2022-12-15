@@ -53,3 +53,5 @@ Copy everything from [THIS](config/stock_x5sa_config.txt) text file and paste it
 ![Alt text](pictures/mainsailmachinetab.png)
 
 - **NOTE:** You do have to manually change the rotation distance of the extruder, instructions can be found [HERE](https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders) and the z_offset, which can be found [HERE](https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders)
+
+Congratulations! You have sucessfully installed klipper onto your X5SA with a STM32F446 chip! Happy printing and make sure to create an issue on this repo if you have any questions or suggestions.
