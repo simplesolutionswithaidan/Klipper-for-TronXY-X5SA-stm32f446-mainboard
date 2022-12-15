@@ -31,7 +31,7 @@ Install Klipper, Moonraker, and Mainsail or Fluidd
 
 # Installing Klipper firmware onto the printer
 
-Go to this repo's directory: firmware and download the fmw_x5sa.bin file.
+Go to this repo's directory: firmware and download the [fmw_x5sa_330](firmware/fmw_x5sa_330.bin) file.
 
 Insert the SD card that you want to use to flash the printer into your pc.
 Make sure that it is completely empty.
@@ -45,4 +45,11 @@ Insert the SD card and usb cable into the printer, and turn it on. The screen sh
 
 # Klipper setup on Pi/computer
 
-Type in your Pi/computer's ip into your web browser
+Type in your Pi/computer's ip into your web browser, it shoulw load with an error like this:
+
+![Alt text](pictures/mainsailerror.png)
+
+Copy everything from [THIS](config/stock_x5sa_config.txt) text file and paste it into machine->printer.cfg
+![Alt text](pictures/mainsailmachinetab.png)
+
+- **NOTE:** You do have to manually change the rotation distance of the extruder, instructions can be found [HERE](https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders) and the z_offset, which can be found [HERE](https://www.klipper3d.org/Rotation_Distance.html#calibrating-rotation_distance-on-extruders)
