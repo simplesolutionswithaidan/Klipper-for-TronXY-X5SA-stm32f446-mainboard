@@ -40,5 +40,9 @@ Create a folder and name it "update". Put the fmw_x5sa.bin file into that folder
 
 Eject the SD card, and turn off your printer. 
 
-Insert the SD card into the printer, and turn it on. The screen should get stuck on something like the image below:
+Insert the SD card and usb cable into the printer, and turn it on. The screen should get stuck on something like the image below if the flash is successful:
+![](pictures/klipperflashed.jpg)
 
+# Klipper setup on Pi/computer
+
+Type in your Pi/computer's ip into your web browser
