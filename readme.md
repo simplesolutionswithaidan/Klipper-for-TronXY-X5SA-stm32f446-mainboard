@@ -11,12 +11,16 @@ Check out the KIAUH repo for more detailed instructions: https://github.com/th33
 
 SSH into your Pi or other computer and run
 ```
+sudo apt install git 
+
 cd ~
 
 git clone https://github.com/th33xitus/kiauh.git
 
 ./kiauh/kiauh.sh
 ```
-to install KIAUH and get to the main panel
+After you run all of those, your terminal should look similar to this:
+
+![](pictures/kiauh1stpanel.png)
 
 Next,
