@@ -28,10 +28,40 @@ Next, type in "1" to get to the install page.
 ![](pictures/kiauh2ndpanel.png)
 
 Install Klipper, Moonraker, and Mainsail or Fluidd
+# OPTIONAL: compile the firmware yourself
+
+SSH into your Pi/computer and run 
+```
+cd ~/klipper/
+
+make menuconfig
+```
+
+Change all the settings to be identical to the picture below.
+
+![Alt text](pictures/klippermenuconfig.png)
+
+To compile the Klipper firmware, press "Q" to exit the menu and when prompted, press "Y" to save. After it saves and exits the gui, run the command: 
+```
+make
+```
+The next step is getting the compiled "klipper.bin" file.
+
+Using [Filezilla](https://filezilla-project.org/download.php?show_all=1), connect to your Pi/computer with the host being "sftp://"yourip" 
+![Alt text](pictures/filezillaconfig.png)
+Once connected, go inside the "klipper" folder to another folder named "out".
+
+Select where you want to download , right click the file named "klipper.bin" and press download.
+
+Once downloaded, rename the file to "fmw_x5sa.bin" and move onto the next step
+
+
+
 
 # Installing Klipper firmware onto the printer
 
-Go to this repo's directory: firmware and download the [fmw_x5sa_330](firmware/fmw_x5sa_330.bin) file.
+
+**(Skip this step if you compiled the firmware yourself)** Go to this repo's directory: firmware and download the [fmw_x5sa_330](firmware/fmw_x5sa_330.bin) file.
 
 Insert the SD card that you want to use to flash the printer into your pc.
 Make sure that it is completely empty.
@@ -45,7 +75,7 @@ Insert the SD card and usb cable into the printer, and turn it on. The screen sh
 
 # Klipper setup on Pi/computer
 
-Type in your Pi/computer's ip into your web browser, it shoulw load with an error like this:
+Type in your Pi/computer's ip into your web browser, it should load with an error like this:
 
 ![Alt text](pictures/mainsailerror.png)
 
